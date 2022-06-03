@@ -14,17 +14,49 @@
 </head>
 <body>
     <header class="header container">
-        <a href="#" class="headerMenu" aria-label="Menu" id="menu">
-            <span class="material-symbols-outlined">menu</span>
-        </a>
+        <button class="">
+            <span class="material-symbols-outlined headerMenu">menu</span>
+        </button>
         <h1 class="headerTitle">Filmes e Séries</h1>
         <nav class="navMenu">
             <a href="#" class="navMenu_span navMenu_span-active"><span class="material-symbols-outlined">movie</span></a>
             <a href="#" class="navMenu_span"><span class="material-symbols-outlined">live_tv</span></a>
             <a href="#" class="navMenu_span"><span class="material-symbols-outlined">group</span></a>
-            <a href="#" class="navMenu_span"><span class="material-symbols-outlined">circle</span></a>
+            <a href="#" class="navMenu_span"><span class="navMenu_profile"></span></a>
         </nav>
     </header>
+
+    <nav class="sideMenu">
+        <button class="iconBack">
+            <span class="material-symbols-outlined ">arrow_back</span>
+        </button>
+        <img src="assets/img/OQtv_logo.svg" alt="OQ.tv Logo" class="sideMenu_logo">
+        <a href="" class="sideMenu_link">
+            <span class="material-symbols-outlined">account_circle</span>
+            <p class="sideMenu_span-caption">Perfil</p>
+        </a>
+        <a href="" class="sideMenu_link">
+            <span class="material-symbols-outlined">notifications</span>
+            <p class="sideMenu_span-caption">Notificações</p>
+        </a>
+        <a href="" class="sideMenu_link">
+            <span class="material-symbols-outlined">bookmark</span>
+            <p class="sideMenu_span-caption">Minhas Listas</p>
+        </a>
+        <a href="" class="sideMenu_link">
+            <span class="material-symbols-outlined">tune</span>
+            <p class="sideMenu_span-caption">Configurações</p>
+        </a>
+        <a href="" class="sideMenu_link">
+            <span class="material-symbols-outlined">share</span>
+            <p class="sideMenu_span-caption">Compartilhe</p>
+        </a>
+        <a href="" class="sideMenu_link linkLogout">
+            <span class="material-symbols-outlined">logout</span>
+            <p class="sideMenu_span-caption">Sair</p>
+        </a>
+    </nav>
+
     <main class="main container">
         <section class="mainSearch">
             <input type="search" name="busca" id="busca" class="input" placeholder="Pesquise títulos, artistas, usuários...">
@@ -56,12 +88,13 @@
         </section>
     </main>
     <footer class="footer">
-        <nav class="navBar_app container">
+        <nav class="footerNav container">
             <a href="#" class="navBar_span navBar_span-active"><span class="material-symbols-outlined">movie</span></a>
-            <a href="#"class="navBar_span"><span class="material-symbols-outlined">live_tv</span></a>
-            <a href="#"class="navBar_span"><span class="material-symbols-outlined">group</span></a>
-            <a href="#"class="navBar_span"><span class="material-symbols-outlined">circle</span></a>
+            <a href="#" class="navBar_span"><span class="material-symbols-outlined">live_tv</span></a>
+            <a href="#" class="navBar_span"><span class="material-symbols-outlined">group</span></a>
+            <a href="#" class="navBar_span"><span class="navMenu_profile"></span></a>
         </nav>
     </footer>
+    <script src="assets/script/index.js"></script>
 </body>
 </html>
