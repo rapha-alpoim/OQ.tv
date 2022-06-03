@@ -1,0 +1,185 @@
+:root {
+    --openSans: 'Open Sans', sans-serif;
+    --roboto: 'Roboto', sans-serif;
+    --main-Verde: #4BC718;
+    --favorite-Red: #EE1237;
+    --cinza-escuro: #252525;
+    --cinza-médio: #575757;
+    --cinza-claro: #25252540;
+}
+
+body{
+    font-family: var(--roboto);
+    color: var(--cinza-escuro);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container {
+    margin: 0 auto;
+    width: 90vw;
+    max-width: 500px;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin: 1rem auto;
+}
+
+.headerTitle {
+    font-family: var(--openSans);
+    font-size: 2rem;
+    margin-left: .5rem;
+}
+
+.navMenu {
+    display: none;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-bottom: 2rem;
+}
+
+.mainSearch {
+    margin-bottom: 1rem;
+}
+
+.input {
+    width: 100%;
+    padding: 10px 16px;
+    border-radius: 20px;
+    box-shadow: 0 0 8px var(--cinza-claro);
+}
+
+.mediaContent {
+    box-shadow: 0 0 8px var(--cinza-claro);
+    border-radius: 20px;
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    background-image: url(../img/poster-pousando-no-amor.jpg.crdownload);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mediaExample {
+    padding: 15rem 1rem 1rem 1rem;
+    background: linear-gradient(#00000000, #00000030);
+    border-radius: 0 0 20px 20px;
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+
+}
+
+.contentTitle {
+    font-family: var(--openSans);
+    font-size: 2rem;
+}
+
+.contentDescription {
+    display: flex;
+    column-gap: .5rem;
+}
+
+.contentNav {
+    display: flex;
+    column-gap: .5rem;
+    align-items: center;
+    color: var(--cinza-médio);
+}
+
+.contentNav_span {
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+}
+
+.addList {
+    margin-left: auto;
+}
+
+.contentNav_span-caption {
+    margin-right: .25rem;
+}
+
+.iconFavorite {
+    color: var(--favorite-Red);
+}
+
+.iconAdd {
+    color: var(--main-Verde);
+}
+
+.footer {
+    box-shadow: 0 0 8px var(--cinza-claro);
+    margin-top: auto;
+}
+
+.navBar_app {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+}
+
+.navBar_span {
+    flex-grow: 1;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.navBar_span-active {
+    border-top: 3px solid var(--main-Verde);
+    color: var(--main-Verde);
+}
+
+@media screen and (min-width: 1024px) {
+    .headerMenu {
+        display: none;
+        margin-left: auto;
+    }
+
+    .headerTitle {
+        flex-grow: 1;
+    }
+    
+    .navMenu{
+        display: flex;
+        align-items: center;
+        column-gap: .5rem;
+    }
+
+    .navMenu_span {
+        padding: 8px;
+        border-radius: 20px;
+    }
+
+    .navMenu_span-active {
+        background-color: var(--main-Verde);
+        color: #fff
+    }
+
+    .main {
+        margin-bottom: 5rem;
+    }
+
+    .footer {
+        display: none;
+    }
+}
