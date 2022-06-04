@@ -65,7 +65,7 @@ body{
     display: flex;
     flex-direction: column;
     background-color: #fff;
-    box-shadow: 0 0 16px var(--cinza-claro);
+    box-shadow: 0 0 32px var(--cinza-claro);
     width: 90vw;
     height: 100vh;
 
